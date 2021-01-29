@@ -3,8 +3,13 @@
   .container
     width: 90%
 
-.skills
-  max-width: 90%
+  .skills
+    max-width: 90%
+
+  .portfolio
+    &__img
+      width: 100%
+      height: auto
 
 @media (max-width: 768px)
   .header
@@ -53,6 +58,10 @@
     width: 48%
     margin-bottom: 50px
 
+  .portfolio
+    &__wrapper
+      margin-bottom: 75px
+
 @media (max-width: 480px)
   .name
     &__info
@@ -70,3 +79,10 @@
 
   .skills
     margin-bottom: 69px
+
+  .portfolio
+    &__wrapper
+      margin-bottom: 50px
+    &__text
+      font-size: 16px
+      line-height: 19px
