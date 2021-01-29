@@ -1,4 +1,4 @@
-// @media (max-width: 1280px)
+
 @media (max-width: 1000px)
   .container
     width: 90%
@@ -13,14 +13,17 @@
 
 @media (max-width: 768px)
   .header
+    &__menu
+      margin: 0
     &__list
       display: none
       &-visible
         display: flex
         flex-direction: column
         align-items: flex-end
+        justify-content: start
         position: absolute
-        top: 64px
+        top: 60px
         right: 0
         height: 100vh
         width: 100%
@@ -35,6 +38,7 @@
   .burger
     display: block
     margin-left: auto
+    padding: 30px 0px 30px 0px
 
   .name
     flex-wrap: wrap
@@ -44,9 +48,10 @@
       margin: 0 0 23px 0
 
   .about
-    margin-bottom: 50px
+    margin-bottom: 0
 
   .skills
+    margin-bottom: 0
     &__title
       margin-bottom: 50px
     &__text
@@ -78,11 +83,23 @@
       margin-bottom: 30px
 
   .skills
-    margin-bottom: 69px
+    margin-bottom: 20px
+    &__text
+      font-size: 16px
+      line-height: 19px
 
   .portfolio
+    padding-top: 50px
+    padding-bottom: 50px
     &__wrapper
       margin-bottom: 50px
+    &__text
+      font-size: 16px
+      line-height: 19px
+    &__img
+      margin-bottom: 30px
+
+  .footer
     &__text
       font-size: 16px
       line-height: 19px

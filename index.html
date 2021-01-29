@@ -7,28 +7,31 @@
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <header class="header container">
-      <nav class="header__menu">
-        <ul class="header__list">
-          <li class="header__item">
-            <a href="#" class="header__link">Домой</a>
-          </li>
-          <li class="header__item">
-            <a href="#" class="header__link">Обо мне</a>
-          </li>
-          <li class="header__item">
-            <a href="#" class="header__link">Навыки</a>
-          </li>
-          <li class="header__item">
-            <a href="#" class="header__link">Порфолио</a>
-          </li>
-          <li class="header__item">
-            <a href="#" class="header__link">Контакты</a>
-          </li>
-        </ul>
-      </nav>
-      <div class="header__line"></div>
-      <button aria-label="Мобильное меню" class="burger"></button>
+    <header class="header">
+      <div class="container">
+        <nav class="header__menu">
+          <ul class="header__list">
+            <li class="header__item">
+              <a href="#" class="header__link">Домой</a>
+            </li>
+            <li class="header__item">
+              <a href="#about" class="header__link">Обо мне</a>
+            </li>
+            <li class="header__item">
+              <a href="#skills" class="header__link">Навыки</a>
+            </li>
+            <li class="header__item">
+              <a href="#portfolio" class="header__link">Порфолио</a>
+            </li>
+            <li class="header__item">
+              <a href="#footer" class="header__link">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="header__line"></div>
+        <button aria-label="Мобильное меню" class="burger"></button>
+      </div>
+      <!-- /.container -->
     </header>
     <section class="name container">
       <h1 class="name__name">Семён Пурнемцев</h1>
@@ -42,6 +45,7 @@
     </section>
     <section
       class="about"
+      id="about"
       data-parallax="scroll"
       data-speed="0.1"
       data-image-src="img/about/parallax.jpg"
@@ -60,7 +64,7 @@
       </div>
       <!-- /.container -->
     </section>
-    <section class="skills">
+    <section class="skills" id="skills">
       <h2 class="skills__title">Навыки</h2>
       <p class="skills__text">
         Умею работать с такими программами и <br />
@@ -106,7 +110,7 @@
       </div>
       <!-- /.skills__wrapper -->
     </section>
-    <section class="portfolio">
+    <section class="portfolio" id="portfolio">
       <div class="container">
         <h2 class="portfolio__title">Портфолио</h2>
         <div class="portfolio__wrapper">
@@ -179,6 +183,40 @@
         <!-- /.portfolio__wrapper -->
       </div>
     </section>
+    <footer class="footer container" id="footer">
+      <h2 class="footer__title">Контакты</h2>
+      <p class="footer__text">
+        Хотите узнать больше или просто поболтать? <br />
+        Добро пожаловать!
+      </p>
+      <a href="#" class="call">Связаться</a>
+      <div class="footer__social">
+        <a href="#" class="footer__social-link"
+          ><img
+            src="img/Footer/Iinstagram.svg"
+            alt="Инстаграмм"
+            class="footer__social-img"
+        /></a>
+        <a href="#" class="footer__social-link"
+          ><img
+            src="img/Footer/VK.svg"
+            alt="Вконтакте"
+            class="footer__social-img"
+        /></a>
+        <a href="#" class="footer__social-link"
+          ><img
+            src="img/Footer/Git.svg"
+            alt="GitHub"
+            class="footer__social-img"
+        /></a>
+        <a href="#" class="footer__social-link"
+          ><img
+            src="img/Footer/Telegram.svg"
+            alt="Телеграм"
+            class="footer__social-img"
+        /></a>
+      </div>
+    </footer>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <script src="js/parallax.js"></script>

@@ -7,11 +7,11 @@ $(function () {
       .classList.toggle("header__list-visible");
   });
 
-  // Бургер кнопка
-  (function () {
-    const burgerBtn = document.querySelector(".burger");
-    burgerBtn.addEventListener("click", () => {
-      burgerBtn.classList.toggle("burger__active");
-    });
-  })();
+  const modal = $(".header__link"),
+    func = () => {
+      document
+        .querySelector(".header__list-visible")
+        .classList.remove("header__list-visible");
+    };
+  modal.on("click", func);
 });
