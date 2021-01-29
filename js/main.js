@@ -6,7 +6,7 @@ $(function () {
       .querySelector(".header__list")
       .classList.toggle("header__list-visible");
   });
-
+  // Закрытие мобильного меню
   const modal = $(".header__link"),
     func = () => {
       document
@@ -14,4 +14,5 @@ $(function () {
         .classList.remove("header__list-visible");
     };
   modal.on("click", func);
+  // параллакс
 });
