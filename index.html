@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html xmlns:og="http://ogp.me/ns#type" lang="ru">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -7,6 +7,15 @@
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
     <link rel="icon" href="favicon.ico" type="image/x-icon" />
     <link rel="stylesheet" href="css/style.css" />
+    <meta property="og:title" content="Семён Пурнемцев" />
+    <meta property="og:locale" content="ru_RU" />
+    <meta property="og:description" content="Сайт визитка Пурнемцев Семен" />
+    <meta property="og:image" content="logo.png" />
+    <meta property="og:site_name" content="Семен Пурнемцев" />
+    <meta name="description" content="Сайт визитка Пурнемцева Семёна" />
+    <meta name="keywords" content="визитка Семён Пурнемцев" />
+    <meta name="Author" content="Семен Пурнемцев" />
+    <meta name="Copyright" content="Семен Пурнемцев" />
   </head>
   <body>
     <header class="header">
@@ -62,7 +71,7 @@
           Я учился на курсе «Web Start 11.0» от GloAcademy.
         </p>
         <p class="about__text">
-          Готов выполнять интересные проекты с замечательныи людьми.
+          Готов выполнять интересные проекты с замечательными людьми.
         </p>
       </div>
       <!-- /.container -->
@@ -79,6 +88,7 @@
             src="img/skill/VSCode-Icon.svg"
             alt="VS Code"
             class="skill__image"
+            title="VS Code"
           /><span class="skill__name">VS Code</span>
           <!-- /.skill__name -->
         </div>
@@ -88,6 +98,7 @@
             src="img/skill/CSS-icon.svg"
             alt="CSS-3"
             class="skill__image"
+            title="CSS-3"
           /><span class="skill__name">CSS 3</span>
           <!-- /.skill__name -->
         </div>
@@ -97,6 +108,7 @@
             src="img/skill/HTML-icon.svg"
             alt="HTML-5"
             class="skill__image"
+            title="HTML-5"
           /><span class="skill__name">HTML 5</span>
           <!-- /.skill__name -->
         </div>
@@ -104,8 +116,9 @@
         <div class="skill">
           <img
             src="img/skill/Figma.svg"
-            alt="Fogma"
+            alt="Figma"
             class="skill__image"
+            title="Figma"
           /><span class="skill__name">Figma</span>
           <!-- /.skill__name -->
         </div>
@@ -127,6 +140,7 @@
                 />
                 <img
                   class="portfolio__image"
+                  title="Сайт кампании 'Стройконтрль'"
                   src="img/portfolio/Building-control-main.png"
                   alt="Сайт кампании 'Стройконтрль'"
                 />
@@ -136,6 +150,7 @@
             <a
               href="https://portfolio.semen-purnemcev.ru/building-control/"
               class="portfolio__text"
+              target="_blank"
               >Строительная кампания - Стройконтроль</a
             >
           </div>
@@ -152,6 +167,7 @@
                   type="image/webp"
                 />
                 <img
+                  title="Видео платформа - superpeer"
                   class="portfolio__image"
                   src="img/portfolio/Superpeer-main.png"
                   alt="Видео платформа - superpeer"
@@ -162,6 +178,7 @@
             <a
               href="https://portfolio.semen-purnemcev.ru/superpeer/"
               class="portfolio__text"
+              target="_blank"
               >Видео платформа - superpeer</a
             >
           </div>
@@ -180,12 +197,17 @@
                 <img
                   class="portfolio__image"
                   src="img/portfolio/E&T.jpg"
-                  alt="Сайт кампании 'Стройконтрль'"
+                  alt="Поисковик для путешествий - Explore and Travel"
+                  title="Поисковик для путешествий - Explore and Travel"
                 />
               </picture>
             </div>
             <!-- /.portfolio__img -->
-            <a href="#" class="portfolio__text">
+            <a
+              href="https://portfolio.semen-purnemcev.ru/travel-and-tours/"
+              class="portfolio__text"
+              target="_blank"
+            >
               Поисковик для путешествий - Explore and Travel
             </a>
           </div>
