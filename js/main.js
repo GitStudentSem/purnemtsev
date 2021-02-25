@@ -14,5 +14,4 @@ $(function () {
         .classList.remove("header__list-visible");
     };
   modal.on("click", func);
-  // параллакс
 });
