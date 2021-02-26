@@ -8,7 +8,6 @@
     width: 936px
     height: auto
     overflow: hidden
-    border: 2px solid
     box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22)
   &__image
     width: 100%
@@ -17,11 +16,12 @@
   &__title
     font-style: normal
     font-weight: bold
-    font-size: 34px
-    line-height: 42px
+    font-size: 32px
+    line-height: 35px
     text-align: center
     margin-bottom: 46px
   &__text
+    display: block
     font-family: $font
     font-style: normal
     font-weight: 500
@@ -31,9 +31,29 @@
     color: $dark
     cursor: pointer
     text-decoration: none
+    margin-bottom: 50px
     &:hover
       text-decoration: underline
   &__wrapper
     margin-bottom: 100px
     &:last-child
       margin-bottom: 0
+  &__description
+    display: flex
+    flex-wrap: wrap
+    justify-content: space-between
+    &-left, &-right
+      max-width: 500px
+  &__point
+    margin: 0 0 30px 0
+    padding: 0
+    list-style-type: none
+    text-align: left
+    &-text
+      font-size: 20px
+      line-height: 24px
+      margin-bottom: 15px
+      &:before
+        content: '✓'
+    &-link
+      color: inherit
