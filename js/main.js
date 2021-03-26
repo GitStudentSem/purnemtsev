@@ -6,6 +6,7 @@ $(function () {
       .querySelector(".header__list")
       .classList.toggle("header__list-visible");
   });
+
   // Закрытие мобильного меню
   const modal = $(".header__link"),
     func = () => {
@@ -15,3 +16,18 @@ $(function () {
     };
   modal.on("click", func);
 });
+// Плавная прокрутка
+(function () {
+  const scrollLinks = document.querySelectorAll("a.scroll-link");
+
+  for (const scrollLink of scrollLinks) {
+    scrollLink.addEventListener("click", (event) => {
+      event.preventDefault();
+      const id = scrollLink.getAttribute("href");
+      document.querySelector(id).scrollIntoView({
+        behavior: "smooth",
+        block: "start",
+      });
+    });
+  }
+})();
